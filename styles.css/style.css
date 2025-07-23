@@ -12,6 +12,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: rgba(245, 248, 255, 1) ;
 }
 
 img{
@@ -69,6 +70,7 @@ li a{
     align-items: end;
     justify-content: space-between;
     padding-top: 106px;
+    margin-bottom: 210px;
 }
 
 .banner-item{
@@ -115,14 +117,59 @@ li a{
 }
 
 
+.plant-card-container{
+    flex: 1;
+    margin-bottom: 120px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 30px;
+}
+.plant-card{
+    /* border: 1px solid black; */
+    max-width: 100%;
+    text-align: center;
+
+}
+.plant-card img{
+    max-width: 100%;
+}
+.plant-card-des{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color:rgba(17, 17, 17, 1) ;
+    margin: 15px;
+    
+}
+.plant-card-title{
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color:rgba(17, 17, 17, 1);
+    
+}
+.btn-plant{
+    background-color: rgba(233, 90, 8, 1) ;
+    color: white;
+    font-weight: 600;
+    display: inline-block;
+    padding: 19px 40px;
+    width: 270px;
+    border: none;
+
+    
+
+}
+
 
 
 /* Responsive media quary */
 
 @media screen and (max-width:576px) {
-    /* *{
-        margin: 5px;
-    } */
+    .container{
+        margin: 0 20px;
+    }
     .logo-container{
         flex-direction: row;
         margin: 20px 16px;
@@ -142,5 +189,25 @@ li a{
     }
     .banner-item h3{
         font-size: 2rem;
+    }
+    /* plant card part */
+    .plant-header{
+        text-align: center;
+        justify-items: center;
+        margin: auto;
+        
+    }
+    .plant-header p{
+        margin: 20px auto;
+    }
+    .plant-card-container{
+        flex: 1;
+        grid-template-columns: repeat(2,1fr);
+        max-width: 100%;
+        gap: 20px;
+        
+    }
+    .plant-card {
+        max-width: min-content;
     }
 }
