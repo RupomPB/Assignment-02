@@ -118,17 +118,17 @@ li a{
 
 
 .plant-card-container{
-    flex: 1;
+    
     margin-bottom: 120px;
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 20px;
-    column-gap: 30px;
+    row-gap: 30px;
+    column-gap: 20px;
 }
 .plant-card{
     /* border: 1px solid black; */
-    max-width: 100%;
+    max-width: 270px;
     text-align: center;
 
 }
@@ -153,12 +153,9 @@ li a{
     background-color: rgba(233, 90, 8, 1) ;
     color: white;
     font-weight: 600;
-    display: inline-block;
     padding: 19px 40px;
-    width: 270px;
-    border: none;
-
-    
+    max-width: 270px;
+    border: none;  
 
 }
 
@@ -190,6 +187,8 @@ li a{
     .banner-item h3{
         font-size: 2rem;
     }
+
+
     /* plant card part */
     .plant-header{
         text-align: center;
@@ -201,13 +200,10 @@ li a{
         margin: 20px auto;
     }
     .plant-card-container{
-        flex: 1;
         grid-template-columns: repeat(2,1fr);
-        max-width: 100%;
-        gap: 20px;
-        
+        gap: 20px;      
     }
     .plant-card {
-        max-width: min-content;
+        max-width: 171px;
     }
 }
