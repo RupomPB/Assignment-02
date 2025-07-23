@@ -14,6 +14,10 @@
     padding: 0;
 }
 
+img{
+    max-width: 100%;
+}
+
 .container{
     max-width: 1140px;
     margin: auto;
@@ -34,12 +38,12 @@ li a{
 }
 
 /* logo section css */
-.menu-container{
+.logo-container{
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(65, 201, 235);
+    
 
 }
 
@@ -63,13 +67,14 @@ li a{
     display: flex;
     /* margin-top: 120px; */
     align-items: end;
+    justify-content: space-between;
     padding-top: 106px;
 }
 
-/* .banner-item{
-    max-width: 50%; 
+.banner-item{
+    max-width: 570px; 
     
-} */
+}
 .banner-item h3{
     font-family: "Noto Serif", serif; 
     font-weight: 700;
@@ -80,9 +85,62 @@ li a{
     color: rgba(0, 0, 0, 0.5);
     font-size: 1.25rem;
     font-weight: 400;
+    margin-top: 13px;
 }
 
 .banner-img{
-    max-width: 50%;
+    max-width: 100%;
     max-height: 355px ;
+}
+
+/* plant section card */
+
+.plant-header{
+    margin-top: 120px;
+    justify-items: center;
+    text-align: center;
+}
+
+.plant-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+
+}
+.plant-description{
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.5);
+    max-width: 888px;
+     
+}
+
+
+
+
+/* Responsive media quary */
+
+@media screen and (max-width:576px) {
+    /* *{
+        margin: 5px;
+    } */
+    .logo-container{
+        flex-direction: row;
+        margin: 20px 16px;
+        max-width: 100%;
+        
+    }
+    .home, .shop{
+        display: none;
+    }
+
+    /* banner part */
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .banner-item{
+        margin: 28px 16px ;
+    }
+    .banner-item h3{
+        font-size: 2rem;
+    }
 }
