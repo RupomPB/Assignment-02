@@ -1,0 +1,88 @@
+.inter{
+  font-family: "Inter", sans-serif; 
+}
+
+.noto-serif{
+  font-family: "Noto Serif", serif;  
+}
+
+
+/*common css */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+li{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: black;    
+}
+
+.yellow{
+   color: rgba(233, 90, 8, 1); 
+}
+
+/* logo section css */
+.menu-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(65, 201, 235);
+
+}
+
+.logo-items ul{
+    display: flex;
+    gap: 48px;
+
+}
+
+.home{
+    color: rgba(37, 36, 50, 1);
+    font-size: bolder;
+}
+
+.shop{
+    color: rgba(137, 135, 161, 1);
+}
+
+/* banner sections css */
+.banner-container{
+    display: flex;
+    /* margin-top: 120px; */
+    align-items: end;
+    padding-top: 106px;
+}
+
+/* .banner-item{
+    max-width: 50%; 
+    
+} */
+.banner-item h3{
+    font-family: "Noto Serif", serif; 
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.banner-item p{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.banner-img{
+    max-width: 50%;
+    max-height: 355px ;
+}
