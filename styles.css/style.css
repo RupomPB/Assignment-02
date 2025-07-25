@@ -363,6 +363,7 @@ li a{
 .join-items input{
     width: 644px;
     height: 50%;
+    border: none;
 }
 
 .btn-join{
@@ -440,6 +441,7 @@ li a{
     /* banner part */
     .banner-container{
         flex-direction: column-reverse;
+        margin-bottom: 50px;
     }
     .banner-item{
         margin: 28px 16px ;
