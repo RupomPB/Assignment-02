@@ -181,16 +181,42 @@ li a{
     max-width: 250px;
     position: absolute;
     top: -110px;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
+    left: 400px;
+    /* transform: translateX(-45%);
+    -webkit-transform: translateX(-45%);
+    -moz-transform: translateX(-45%);
+    -ms-transform: translateX(-45%);
+    -o-transform: translateX(-45%); */
+    animation: rotate 3s linear infinite;
+    -webkit-animation: rotate 3s linear infinite;
 }
-.trusted-spin img{
+
+        /* Animation part  */
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
+
+    to{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+
+
+
+}
+
+
+/* .trusted-spin img{
     background-color: transparent !important;
-}
+} */
 
 .plant-lover-items{
     flex: 1;
@@ -346,7 +372,56 @@ li a{
     color: aliceblue;
     font-size: 1rem;
 }
-/* Responsive media quary */
+
+/* footer section  */
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 1.3fr repeat(3,1fr);
+    gap: 100px;
+    margin-bottom: 130px;
+    
+}
+
+.footer-part1 img{
+    margin-bottom:30px ;
+}
+
+.footer-description{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+    line-height: 1.25;
+}
+
+.footer-item-1 ul, .footer-item-2 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-item-1 ul, .footer-item-2 ul{
+    list-style: none;
+}
+
+.footer-item-1 ul a, .footer-item-2 ul a{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.25rem;
+}
+
+.footer-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.footer-icons img{
+    max-width: 36px;
+    max-height: 36px;
+
+}
+
+        /* Responsive media quary */
+
+
 
 @media screen and (max-width:576px) {
     .container{
@@ -419,4 +494,11 @@ li a{
         max-width: 220px;
         height: 30%;
     }
+    /* footer section */
+
+    .footer-container{
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
 }
